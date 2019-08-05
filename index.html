@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic</title>
+</head>
+<body>
+
+
+<script> // basic 1
+	var hannover = {
+		soccerclub: true,
+		anzahlBewohner: 600.000,
+		rivers: true,
+		nicole: false,
+	}
+	console.log(hannover);
+
+	function CityConstructor (name, soccerclub, anzahlBewohner, nicole) {
+		this.name = name;
+		this.soccerclub = soccerclub;
+		this.nicole = nicole;
+		this.anzahlBewohner = anzahlBewohner;
+		this.checkFemaleBewohner = function() {
+				 return this.anzahlBewohner / 2;
+		};
+			}
+
+	var vienna =  new CityConstructor("vienna", "rapid and austria", 1.800000, true);
+
+	console.log(vienna);
+
+	class cities {
+		constructor  (name, soccerclub, anzahlBewohner, nicole) {
+		this.name = name;
+		this.soccerclub = soccerclub;
+		this.nicole = nicole;
+		this.anzahlBewohner = anzahlBewohner;
+			}
+
+		checkFemaleBewohner () {
+				 return this.anzahlBewohner / 2;
+				};
+	}
+
+	var Lisabon = new cities("Lisabon","Benfica",10,false);
+
+	console.log( Lisabon.checkFemaleBewohner());
+
+</script>
+
+<script> // basic 2 
+	
+	function DarkoConstructor (name, age, nationality, eyes, voice, specialskill) {
+		this.name = name;
+		this.age = age;
+		this.nationality = nationality;
+		this.eyes = eyes;
+		this.voice = voice;
+		this.specialskill = specialskill;
+		this.checkPersonSize = function() {
+			return "Darko is 1.87 cm tall!";
+		
+		};
+
+		this.checkPersonSpecialSkill = function() {
+			return " NONE ";
+	}
+
+}
+
+
+	var darko = new DarkoConstructor("Darko", 24, "Kroatian", "lightblue", "very deep brum brum", "table dance")
+
+		console.log(darko);
+
+// basic 3
+	DarkoConstructor.prototype.looking_as_he_does_something_but_actually_mentally_on_a_holliday_in_kuba = function() {
+		return "seriously " + true;
+	};
+
+	console.log(darko.looking_as_he_does_something_but_actually_mentally_on_a_holliday_in_kuba());
+</script>
+</body>
+</html>
