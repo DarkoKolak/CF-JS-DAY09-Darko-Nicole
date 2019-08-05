@@ -1,0 +1,54 @@
+#outerbox {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+.innerboxes2 {
+background-color: red;
+padding:  20px;
+margin: 20px;
+text-align: center;
+font-size: 30px;
+width: 35%;
+}
+
+
+.innerboxes {
+background-color: lightgray;
+padding:  20px;
+margin: 20px;
+text-align: center;
+font-size: 30px;
+}
+
+h1 {
+	background-color: #9A2317;
+	color: white;
+
+}
+
+#result {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	display: none;
+}
+#carsum{
+	display: none;
+}
+
+#shoppingcart {
+	color:  black;
+	display:  inline-block;
+	float:  right;
+
+}
+
+nav {
+	background-color: black;
+}
+
+a {
+	color: white;
